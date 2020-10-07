@@ -6,7 +6,7 @@
     <parent>
         <groupId>com.aerospike</groupId>
         <artifactId>spring-boot-data-aerospike</artifactId>
-        <version>0.0.1.INFRA-SNAPSHOT</version>
+        <version>0.0.1.INFRA</version>
     </parent>
 
     <artifactId>spring-boot-starter-data-aerospike-reactive</artifactId>
