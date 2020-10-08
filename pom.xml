@@ -11,7 +11,7 @@
 
     <groupId>com.aerospike</groupId>
     <artifactId>spring-boot-data-aerospike</artifactId>
-    <version>0.0.2.INFRA-SNAPSHOT</version>
+    <version>0.0.2.INFRA</version>
 
     <packaging>pom</packaging>
 
