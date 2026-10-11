@@ -43,3 +43,7 @@ SHA-256-verified Maven 3.9.16 distribution so the shared build can invoke
 +branch. Review the validated source SHA and shared workflow pin before approving
 +the `maven-central` deployment. Drafts, prereleases, snapshots and unapproved
 +actors are rejected. Publication stays blocked until onboarding is complete.
+
+The two dependency-only starters attach empty source/Javadoc companion JARs
+for Central publication; their existing main JARs and dependency coordinates
+are preserved.
