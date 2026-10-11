@@ -13,6 +13,10 @@
     <artifactId>spring-boot-data-aerospike</artifactId>
     <version>0.0.8.INFRA-SNAPSHOT</version>
 
+    <name>Spring Boot Data Aerospike</name>
+    <description>Spring Boot auto-configuration and starters for Spring Data Aerospike.</description>
+    <url>https://github.com/PlaytikaOSS/spring-boot-data-aerospike</url>
+
     <packaging>pom</packaging>
 
     <modules>
@@ -34,6 +38,8 @@
         <aerospike-client.version>4.4.18</aerospike-client.version>
 
         <spring-cloud-starter.version>3.0.0</spring-cloud-starter.version>
+        <maven-source-plugin.version>3.3.1</maven-source-plugin.version>
+        <maven-javadoc-plugin.version>3.11.2</maven-javadoc-plugin.version>
     </properties>
 
     <licenses>

@@ -28,4 +28,37 @@
             <artifactId>spring-boot-autoconfigure-data-aerospike</artifactId>
         </dependency>
     </dependencies>
+
+    <!-- These dependency-only starters have no Java sources or Javadoc. -->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.4.2</version>
+                <executions>
+                    <execution>
+                        <id>attach-empty-sources</id>
+                        <phase>package</phase>
+                        <goals><goal>jar</goal></goals>
+                        <configuration>
+                            <classifier>sources</classifier>
+                            <classesDirectory>${project.build.directory}/empty-docs</classesDirectory>
+                            <skipIfEmpty>false</skipIfEmpty>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>attach-empty-javadocs</id>
+                        <phase>package</phase>
+                        <goals><goal>jar</goal></goals>
+                        <configuration>
+                            <classifier>javadoc</classifier>
+                            <classesDirectory>${project.build.directory}/empty-docs</classesDirectory>
+                            <skipIfEmpty>false</skipIfEmpty>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 </project>
